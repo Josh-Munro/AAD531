@@ -10,14 +10,14 @@ body {
 
 header {
     height: 100px;
-    background-color: #001B29;
+    background-color: #CFE7C0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.logo {
-    color: #ECF39E;
+.logo h1{
+    font-size: 30px;
 }
 
 ul {
@@ -28,7 +28,7 @@ ul {
 ul li a {
     padding: 0 20px;
     text-decoration: none;
-    color: #ECF39E;
+    color: #0E180B;
     display: inline-block;
 }
 
@@ -49,25 +49,62 @@ li a:hover::after {
 main {
     display: flex;
     justify-content: space-around;
-    height:calc(100vh - 100px);
+    height:calc(100vh);
     align-items: center;
+    background-image:url('final-hero2.jpg');
+    background-size: cover;
+    margin-bottom: 50px;
 }
 
 .hero {
     max-width: 670px;
 }
 
-.left-content {
-    width: 30%;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-main h1 {
+.container h1 {
+    font-size: 30px;
+}
+
+.illustrator {
+    background-color: blanchedalmond;
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+.developer {
+    background-color: #5D8345;
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.developer h1 {
+    color: #CFE7C0;
+}
+
+.designer {
+    background-color: rgb(231, 145, 114);
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+ h1 {
     font-size: 54px;
     color: #13384f;
     text-transform: uppercase;
 }
 
-main h2 {
+ h2 {
     font-size: 25px;
     color: #fca70c;
     font-weight: 300;
@@ -95,7 +132,7 @@ main h2 {
     .hero {
         max-width: 400px;
     }
-    main h1 {
+     h1 {
         font-size: 30px;
     }
 
@@ -111,8 +148,8 @@ main h2 {
         text-align: center;
     }
 
-    .cta {
-        margin-left:calc(50% - 100px);
+    .container {
+        flex-direction: column;
     }
 
 }

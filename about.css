@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #001B29;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subheading h1 {
+    text-align: center;
+}
+
+.subheading {
+    margin-bottom: 30px;
+}
+
+.logo {
+    color: #ECF39E;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3d5032;
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0px;
+    background-color: #c4c4f7;
+    transition:all 0.5s;
+
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height:calc(100vh - 100px);
+    align-items: center;
+    background-image:url('https://media.istockphoto.com/vectors/abstract-background-vector-id1137915894?k=6&m=1137915894&s=612x612&w=0&h=rXeW2Wxa3ltQh1XCcn_YgtuDutoJGI9bI6AKo39HIKc=');
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.hero {
+    max-width: 670px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 30px;
+}
+
+.illustrator {
+    background-color: blanchedalmond;
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+.developer {
+    background-color: cadetblue;
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.designer {
+    background-color: coral;
+    height: 50vh;
+    padding: 50px;
+    text-align: center;
+}
+
+ h1 {
+    font-size: 54px;
+    color: #13384f;
+    text-transform: uppercase;
+}
+
+ h2 {
+    font-size: 25px;
+    color: #fca70c;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 30px 0;
+}
+
+.cta {
+    padding: 15px 30px;
+    background-color: #c4c4f7;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+@media(max-width: 1080px) {
+    main {
+        flex-direction: column;
+    }
+    .hero {
+        max-width: 400px;
+    }
+     h1 {
+        font-size: 30px;
+    }
+
+    .left-content {
+        width: auto;
+    }
+    
+    .left-content h1 {
+        text-align: center;
+    }
+
+    .left-content h2 {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .developer {
+        width: 100%;
+    }
+
+}
